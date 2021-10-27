@@ -2,15 +2,69 @@
 <html> 
   <head>
     <title>My Cool Web Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex,nofollow" />
     <style>
-      body {
+    html {
+      background-color: #ccc}
+    
+    body {
         font-family: 'Courier New' ;
+        max-width:960px;
+        background-color: #fff;
+        width: 90%;
+        margin: 0 auto;
+        padding: 1%;
+    }
+
+
+    nav{
+      text-align:center; /* centers the nav */
+    }
+
+    nav ul {
+      list-style:none; /* removes the bullets */
+    }
+    nav ul li
+    {
+      display:inline-block; /* makes horizontal, but able to declare margins */
+      margin:0 2%; /* margin left-right, gets smaller as necessary */
+    }
+    nav a:hover{
+      text-decoration: none;
+    }	
+
+
+    footer{
+        text-align:center;
+        clear: both;
+
+
       }
     </style>
   </head>
   <body>
+    <header>
       <h1>My Cool Web Page</h1>
+      <!-- Put nav below here -->
+
+      <nav>
+        <ul>
+          <li><a href="#">Link 1</a></li>
+          <li><a href="#">Link 2</a></li>
+          <li><a href="#">Link 3</a></li>
+          <li><a href="#">Link 4</a></li>
+          <li><a href="#">Link 5</a></li>
+          <li><a href="#">Link 6</a></li>
+        </ul>
+      </nav>
+  
+
+    </header>
  <p>Here is some clever content. That was not very clever, but I need more content. I need at least one more sentence to make this paragraph.</p>
+
+
+
       <p>My favorite movies</p>
       <p>
         <ul> 
@@ -30,7 +84,7 @@
       <p> <img src="https://picsum.photos/200/300/" ></p>
       <p>Pictures provided by <a href="https://picsum.photos/" target ="_blank"> Lorem Picsum</a></p>
 
-      <p>Here is how we use the <strong>strong</strong> tag. Here is how we use the <em>em</em> tag. Here is how we use the <strike>strike</strike> tag. <p/>
+      <p>Here is how we use the <strong>strong</strong> tag. Here is how we use the <em>em</em> tag. Here is how we use the <strike>strike</strike> tag. </p>
       
       <div>Here we are inside a div. <span style="background-color:yellow">Here we are inside a span.</span> </div>
 
@@ -64,7 +118,9 @@
 
 </table>
 
-
+<footer>
+  &copy; 2021 My Cool Website
+</footer>
 
   </body>
 </html>
